@@ -5,8 +5,6 @@ Implementation of the [itzg/docker-minecraft-server](https://github.com/itzg/doc
 ### Notes:
 Plugin configurations are handled downstream by the generated plugin files - **if you don't want to use any particular configuration or prefer the default implementation, just delete the files and the jar will repopulate them. Plugins are mounted from /plugins folder, not from papermc/plugins**. 
 
-**For admins/OPs to be loaded correctly, you'll need to rename `ops.json.example` to `ops.json`.**
-
 ### Plugins:
 - ChatColor2
 - [Chunky](https://modrinth.com/plugin/chunky)
