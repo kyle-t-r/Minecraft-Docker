@@ -1,4 +1,5 @@
 # Docker Minecraft Server Implementation (1.21.4)
+## With Plugins!
 Implementation of the [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server) image with plugin configurations for EssentialsX and mcMMO. Essentially a "quick-start" for a Minecraft Docker server with some barebones plugins, since most online documentation only refers to mod configuration. This includes RCON from the [itzg/docker-rcon-web-admin](https://github.com/itzg/docker-rcon-web-admin) repository.
 
 ### Notes:
