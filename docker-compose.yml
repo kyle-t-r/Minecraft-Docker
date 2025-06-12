@@ -1,0 +1,26 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: papermc
+    env_file: papermc.env
+    ports:
+      - "25565:25565"
+      - "8123:8123" #Dynmap
+    volumes:
+      - ./papermc:/data
+      - ./plugins:/data/plugins/
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options: 
+        max-size: "100m"
+        max-file: "2"
+  web:
+    image: itzg/rcon
+    container_name: rcon
+    env_file: rcon.env 
+    ports:
+      - "4326:4326" #Dashboard
+      - "4327:4327" #Shrug, says it's required

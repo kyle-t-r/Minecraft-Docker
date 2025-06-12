@@ -1,0 +1,19 @@
+ops.json
+papermc/*
+#Block all contents of /plugins EXCEPT jar files
+plugins/*
+!plugins/*.jar
+#Essentials
+!plugins/Essentials
+plugins/Essentials/*
+!plugins/Essentials/config.yml
+!plugins/Essentials/motd.txt
+!plugins/Essentials/kits.yml
+#MCMMO
+!plugins/mcMMO
+plugins/mcMMO/*
+!plugins/mcMMO/advanced.yml
+!plugins/mcMMO/config.yml
+!plugins/mcMMO/experience.yml
+!plugins/mcMMO/chat.yml
+!plugins/mcmmo/skillranks.yml
