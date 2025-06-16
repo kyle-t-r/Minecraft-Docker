@@ -17,6 +17,8 @@ services:
       options: 
         max-size: "100m"
         max-file: "2"
+    networks:
+      - db_network
   web:
     image: itzg/rcon
     container_name: rcon
@@ -24,3 +26,16 @@ services:
     ports:
       - "4326:4326" #Dashboard
       - "4327:4327" #Shrug, says it's required
+    networks:
+      - db_network
+  db:
+    image: mariadb:latest
+    container_name: db
+    env_file: mariadb.env
+    ports:
+      - "3306:3306"
+    networks:
+      - db_network
+networks:
+  db_network:
+    driver: bridge

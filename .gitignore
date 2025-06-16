@@ -17,3 +17,7 @@ plugins/mcMMO/*
 !plugins/mcMMO/experience.yml
 !plugins/mcMMO/chat.yml
 !plugins/mcmmo/skillranks.yml
+#LuckPerms
+!plugins/LuckPerms
+plugins/LuckPerms/*
+!plugins/LuckPerms/config.yml
